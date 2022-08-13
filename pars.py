@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as BS
 import webbrowser
 import telebot
 from telebot import types
-bot = telebot.TeleBot('2038959829:AAHVzVx2r7LwkfhwSugZ3WTWMhdF6n9-jtk')
+bot = telebot.TeleBot('BOT_TOKEN')
 def pars():
     url = requests.get("https://ru.wikipedia.org/wiki/Special:Random")
     soup = BS(url.content, "html.parser")
